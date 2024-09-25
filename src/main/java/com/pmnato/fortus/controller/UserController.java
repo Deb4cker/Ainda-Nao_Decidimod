@@ -22,6 +22,12 @@ public class UserController {
         };
     }
 
+    /*
+     * Essa rota é só para gerar uma homepage temporária. Não faz parte da implementação de vocês.
+     * Para ver a tela basta abrir a url padrão:
+     * http://localhost:8080/
+     */
+
     @GetMapping("/")
     public String home(){
         return """
@@ -44,22 +50,22 @@ public class UserController {
                         transition: all 0.3s;
                         box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
                     }
-                            
+                           \s
                     button:active {
                         color: #666;
                         box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
                     }
-                            
+                           \s
                 </style>
                 <body>
                     <h1>Ta funcionando!!</h1>
-                            
+                           \s
                     <a href="https://youtu.be/z5d80AZ-KQ4?si=JZ5o4xgrWGYjHuK-" target="_blank" style="text-decoration: none;">
                         <button>Caminhão do diabo 🚚👺</button>
                     </a>
                 </body>
                 </html>
-                """;
+               \s""";
     }
 
 }
