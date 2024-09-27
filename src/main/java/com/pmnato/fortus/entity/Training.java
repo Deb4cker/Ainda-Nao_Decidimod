@@ -1,5 +1,6 @@
 package com.pmnato.fortus.entity;
 
+import lombok.NoArgsConstructor;
 import java.time.LocalDate;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
