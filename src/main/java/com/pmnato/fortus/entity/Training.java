@@ -17,7 +17,6 @@ public class Training {
     private boolean status;
     private long durationTimeMilis;
     private DayOfWeek dayOfWeek;
-    private long userId;
 
     //private User user;
 
