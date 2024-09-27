@@ -10,17 +10,23 @@ public class UserController {
     @GetMapping("/user/all")
     public User[] getAll() {
         return new User[]{
-                new User(1l, "John", "john@email.com", "", ""),
-                new User(2l, "Mary", "mary@email.com", "", ""),
-                new User(3l, "Paul", "paul@email.com", "", ""),
-                new User(4l, "Jesy", "jesy@email.com", "", ""),
-                new User(5l, "Kali", "kali@email.com", "", ""),
-                new User(6l, "Beny", "beny@email.com", "", ""),
-                new User(7l, "Bill", "bill@email.com", "", ""),
-                new User(8l, "Alle", "alle@email.com", "", ""),
-                new User(9l, "Vlad", "vlad@email.com", "", "")
+                new User(1L, "John", "john@email.com", "", ""),
+                new User(2L, "Mary", "mary@email.com", "", ""),
+                new User(3L, "Paul", "paul@email.com", "", ""),
+                new User(4L, "Jesy", "jesy@email.com", "", ""),
+                new User(5L, "Kali", "kali@email.com", "", ""),
+                new User(6L, "Beny", "beny@email.com", "", ""),
+                new User(7L, "Bill", "bill@email.com", "", ""),
+                new User(8L, "Alle", "alle@email.com", "", ""),
+                new User(9L, "Vlad", "vlad@email.com", "", "")
         };
     }
+
+    /*
+     * Essa rota é só para gerar uma homepage temporária. Não faz parte da implementação de vocês.
+     * Para ver a tela basta abrir a url padrão:
+     * http://localhost:8080/
+     */
 
     @GetMapping("/")
     public String home(){
@@ -44,22 +50,22 @@ public class UserController {
                         transition: all 0.3s;
                         box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
                     }
-                            
+                           \s
                     button:active {
                         color: #666;
                         box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
                     }
-                            
+                           \s
                 </style>
                 <body>
                     <h1>Ta funcionando!!</h1>
-                            
+                           \s
                     <a href="https://youtu.be/z5d80AZ-KQ4?si=JZ5o4xgrWGYjHuK-" target="_blank" style="text-decoration: none;">
                         <button>Caminhão do diabo 🚚👺</button>
                     </a>
                 </body>
                 </html>
-                """;
+               \s""";
     }
 
 }
