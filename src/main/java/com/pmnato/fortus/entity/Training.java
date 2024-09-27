@@ -15,7 +15,7 @@ public class Training {
     private String description;
     private LocalDate date;
     private boolean status;
-    private long durationTimeMilis;
+    private long durationTimeMillis;
     private DayOfWeek dayOfWeek;
 
     //private User user;

@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class ExerciseController {
-    @GetMapping
-    public Exercise[] getall(){
+    @GetMapping("exercise/all")
+    public Exercise[] getAll(){
         return new Exercise[]{
                 new Exercise(1, "Supino reto", Difficulty.MEDIUM, 12, "1:30", "ImageUrl", "VideoUrl"),
                 new Exercise(2, "Agachamento Hack", Difficulty.HARD, 8, "1:30", "ImageUrl", "VideoUrl"),
@@ -20,7 +20,6 @@ public class ExerciseController {
                 new Exercise(8, "Flexao", Difficulty.EASY, 12, "1:30", "ImageUrl", "VideoUrl"),
                 new Exercise(9, "Remada curvada", Difficulty.HARD, 8, "1:30", "ImageUrl", "VideoUrl"),
                 new Exercise(10, "Supino inclinado com halteres", Difficulty.MEDIUM, 12, "1:30", "ImageUrl", "VideoUrl")
-
         };
     }
 }
